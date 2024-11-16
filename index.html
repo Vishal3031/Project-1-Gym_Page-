@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vihaan Fitness</title>
+    <!-- <link rel="stylesheet" href="linked css/project1-stylesheet.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+
+body{
+            /* font-family: 'Itim', cursive; */
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            height: 800px;
+            background-image: url('girl.jpg');
+            /*color: white;*/ /* here, u can also set elements colr*/
+        }
+
+        .left{
+            /* border: 2px solid rgb(245, 241, 241); */
+            color: white;
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 11px;
+        }
+
+        .mid{
+            /* border: 2px solid white; */
+            color: white;
+            /* display: block; */
+            margin:16px auto;
+            width: 37%;
+        }
+
+        .right{
+            /* border: 2px solid white; */
+            color: white;
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 9px;
+        }
+
+/* here, mid stylesheets */
+.navbar li{
+    display: inline-block;
+    font-size: small;
+
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    /* font-weight: ; */
+    
+}
+
+.navbar li a.active{
+    color: gray;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+    color: gray;
+    /* font-weight: bold;*/
+    
+}
+
+/* here, left stylesheets */
+.left img{
+    margin: 0px 9px;
+    width: 40px;
+    filter:invert(100%) /*it is use for changing the img color "black to white" "white to black"*/
+}
+
+.vihaan{
+    font-size: small;
+    /* margin: 0px 5px; */ /*u can also use text align*/
+    text-align: center;
+}
+
+.vishal{
+    font-size: x-small;
+    /* line-height: 2px; */
+    /* margin:0px 19px; */ /*u can also use text align*/
+    text-align: center;
+    
+}
+
+/* here,right stylesheet */
+.bishu{
+    margin:5px 3px;
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 13px;
+    cursor: pointer; /* use for cursor changing*/
+    font-family: 'Itim', cursive;
+
+}
+
+.bishu:hover{
+    background-color: rgb(64, 64, 64);
+}
+
+.formm{
+    /* border: 2px solid green; */
+    color: white;
+    border-radius: 5px;
+    margin:138px 69px ;
+    padding:35px 25px ;
+    width: 33%;
+    text-align: center;
+}
+
+.form-group input{
+        /* font-family: 'Itim', cursive; */
+
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        padding: 8px;
+        width: 230px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 4px 75px;
+        text-align: center;
+
+}
+
+.formm button{
+    display:block;
+    margin: 15px 76px;
+    text-align: center;
+    width: 246px;
+    border-radius:8px ;
+
+}
+
+.footer{
+    position: absolute;
+    bottom: -280px;
+    color: rgb(11, 11, 11);
+    display: block;
+    border: 2px solid rgb(74, 74, 74);
+    background-color: gray;
+    margin: 2px 6px;
+    width: 1250px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.footer a:hover{
+color: white;
+}
+/* @media(max-width:700px){
+    .hi{
+        font-size: small;
+    }
+    body{
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+} */
+
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="dumbell.png" alt="not loading">
+            <div class="vihaan">
+                Mr Vihaan
+            </div>
+            <div class="vishal">FITNESS</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">FITNESS CENTER</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="bishu">call us</button>
+            <button class="bishu">email us</button>
+        </div>
+    </header>
+
+    <div class="formm">
+        <h2>join the best gym in delhi now</h1>
+        <form action="nonbackend.php">
+            <div class="form-group">
+                <input type="text" placeholder="enter the Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="enter the Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="enter the Locality">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="enter the Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="enter your Phone number">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="enter Your Email ID">
+            </div>
+            
+                <button class="bishu">submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+            copyright. <a>mrvihaan031@gmail.com</a>
+        </div>
+    </footer>
+
+</body>
+</html>
